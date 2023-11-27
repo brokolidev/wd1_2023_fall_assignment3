@@ -1,4 +1,4 @@
-/************* your name: 
+/************* your name: Hyun Seung Choi
 
 INSTRUCTIONS:
 Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
@@ -24,6 +24,9 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
+.flex {
+    display: flex;
+}
 
  
 
@@ -42,9 +45,46 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: solid black 1px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -59,7 +99,34 @@ body {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header {
+    height: 150px;
+    margin-bottom: 25px;
+    background-color: #E5AF42;
+}
 
+header img {
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    margin-right: 0;
+}
+
+header h1 {
+    width: 100%;
+    vertical-align: middle;
+}
+
+footer {
+    margin-top: 50px;
+    height: 60px;
+    font-weight: 200;
+    background-color: #E5AF42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 
@@ -73,6 +140,35 @@ body {
     - each fake-button on this page will be 250px wide with 150px of space between them.
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
+
+.index img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.index > div:first-child {
+    gap: 25px;
+}
+
+.index h2 {
+    line-height: 36px;
+}
+
+.index p {
+    margin-bottom: 12px;
+}
+
+.index > div:nth-child(2) {
+    gap: 150px;
+}
+
+.index .fake-button {
+    width: 250px;
+}
+
+.index .fake-button:first-child {
+    margin-left: 148px;
+}
 
 
 
@@ -93,14 +189,47 @@ body {
 
 */
 
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
 
+.booking-page .day-selector {
+    margin-bottom: 12px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
 
+.booking-page .day-selector li {
+    display: block;
+    width: 60px;
+}
 
+.booking-page .day-selector li,
+.booking-page .small-button {
+    border: 1px solid black;
+}
 
+.booking-page .small-button {
+    padding: 5px;
+}
 
+.booking-page .top-margin {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
 
+.booking-page #clear-button {
+    width: 200px;
+    margin: 0 auto;
+}
 
-
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
@@ -114,6 +243,44 @@ body {
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+#contact-page {
+    height: 420px;
+}
 
+#contact-page h2 {
+    text-align: center;
+}
 
+#contact-page .flex {
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+}
 
+#contact-page label {
+    width: 150px;
+    text-align: right;
+}
+
+#contact-page input {
+    width: 300px;
+}
+
+#contact-page #user-message {
+    width: 300px;
+    height: 150px;
+}
+
+#contact-page input,
+#contact-page textarea,
+#contact-page button {
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+#contact-page button {
+    margin-top: 24px;
+    width: 306px;
+    margin-left: 409px;
+}
