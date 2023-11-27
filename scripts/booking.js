@@ -6,12 +6,12 @@
 const rateObject = {
     'full': 35,
     'half': 20,
-}
+};
 const clearDaysButton = document.getElementById("clear-button");
 const days = document.getElementsByClassName("day-selector")[0];
 const calculatedCost = document.getElementById("calculated-cost");
 
-let dailyRate = rateObject['full'];
+let dailyRate = rateObject.full;
 let totalCost = 0;
 let dayCounter = 0;
 
